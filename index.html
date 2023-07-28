@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome  -->
+    <script
+      src="https://kit.fontawesome.com/864dadfe2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Alert cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <div class="text-center">
+        <h2 class="header-text">CRUD APPLICATION</h2>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="form-left">
+        <form class="registerForm">
+          <div class="input-box">
+            <label for="pname">Product Name:</label>
+            <input type="text" id="pname" name="pname" required />
+          </div>
+          <div class="input-box">
+            <label for="pid">Product id:</label>
+            <input type="number" id="pid" name="pid" required />
+          </div>
+          <div class="input-box">
+            <label for="pimg">Product image:</label>
+            <input type="file" id="pimg" name="pimg" required />
+            <img
+              id="preview"
+              src=""
+              class="hidden"
+              width="270px"
+              height="270px"
+            />
+          </div>
+          <div class="input-box">
+            <label for="pprice">Product Price:</label>
+            <input type="number" id="pprice" name="pprice" required />
+          </div>
+          <div class="input-box">
+            <label for="pdesc">Product Description:</label>
+            <textarea
+              id="pdesc"
+              name="pdesc"
+              rows="7"
+              cols="20"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit" value="Submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="view-right">
+        <div class="filter">
+          <label for="search" class="search">Filter by ID:</label>
+          <input
+            type="text"
+            id="searchById"
+            name="search"
+            placeholder="Search for products by ID"
+          />
+          <div class="sort">
+            <label for="sortProduct">Sort by:</label>
+            <select name="sortProduct" id="sort">
+              <option value="id">Product ID</option>
+              <option value="name">Product Name</option>
+              <option value="price">Product Price</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <br />
+        <table>
+          <thead class="table-heading">
+            <tr>
+              <th>Sr No.</th>
+              <th>Product ID</th>
+              <th>Product Name</th>
+              <th>Product Image</th>
+              <th>Product Price</th>
+              <th>Product Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="table__data"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

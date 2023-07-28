@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #1b2530;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* alert swal */
+.swal2-container.swal2-center > .swal2-popup {
+  background-color: #ffffff !important;
+}
+.swal2-html-container,
+.swal2-title,
+.swal2-icon,
+.swal2-success-ring,
+.swal2-icon.swal2-success {
+  background-color: white;
+  color: #000000 !important;
+  border-color: #a5dc86 !important;
+}
+
+.swal2-success-line-tip,
+.swal2-success-line-long {
+  border-color: #a5dc86;
+}
+
+.text-center {
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filter input {
+  padding: 14px;
+  background-color: rgb(223, 220, 220);
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 25px;
+}
+
+.search {
+  font-size: 20px;
+}
+
+.form-left form {
+  height: 100%;
+  position: relative;
+  padding: 15px;
+  margin: 15px;
+}
+
+.form-left form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  background-color: rgb(223, 220, 220);
+  color: rgb(0, 0, 0);
+  border: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-left textarea {
+  resize: none;
+  height: 90px;
+}
+
+.form-left button {
+  width: 100%;
+}
+
+.form-left .submit {
+  background-color: green;
+  border-radius: 18px;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+.form-left .submit:hover {
+  cursor: pointer;
+}
+
+/* view js back button */
+.form-left .back {
+  background-color: green;
+  border-radius: 18px;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+.form-left .back:hover {
+  cursor: pointer;
+}
+
+/* IMAGE */
+.hidden {
+  display: none;
+}
+
+/*---------------------- responsive form---------------- */
+@media (max-width: 510px) {
+  form {
+    width: 76%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .form-left form {
+    padding: 5px;
+    margin: 5px;
+  }
+  .form-left form input,
+  form textarea {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+}
+@media screen and (max-height: 600px) {
+  .form-left form {
+    padding: 2px;
+    margin: 2px;
+  }
+  .form-left form input,
+  form textarea {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+}
+/* --------------responsive form ------------------*/
+
+.view-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+table th {
+  padding: 15px;
+}
+
+table,
+th,
+td {
+  border: 0.5px solid white;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* main contenyt responsiveness */
+@media screen and (max-width: 900px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  th {
+    text-align: left;
+  }
+}

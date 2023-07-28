@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- FOntawesome  -->
+    <script
+      src="https://kit.fontawesome.com/864dadfe2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ALert cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>View Data</title>
+  </head>
+  <body>
+    <header>
+    <div class="text-center">
+      <h2 class="header-text">Your are now Viewing the Product!</h2>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="form-left">
+      <form class="registerForm">
+        <div class="input-box">
+          <label for="pname">Product Name:</label>
+          <input type="text" id="pname" name="pname" required disabled />
+        </div>
+        <br>
+        <div class="input-box">
+          <label for="pid">Product id:</label>
+          <input type="text" id="pid" name="pid" required disabled/>
+        </div>
+        <br>
+        <div class="input-box">
+          <label for="pimg">Product image:</label>
+          </div>
+          <!-- <input type="file" id="pimg" name="pimg" disabled /> -->
+          <div>
+          <img
+            id="preview"
+            src=""
+            width="270px"
+            height="270px"
+            alt="No Image! Please Edit and submit an Image of your Product"
+          />
+        </div>
+        <br>
+        <div class="input-box">
+          <label for="pprice">Product Price:</label>
+          <input type="number" id="pprice" name="pprice" required disabled/>
+        </div>
+        <br>
+        <div class="input-box">
+          <label for="pdesc">Product Description:</label>
+          <textarea
+            id="pdesc"
+            name="pdesc"
+            rows="7"
+            cols="20"
+            required
+          disabled></textarea>
+        </div>
+        <button  class="back" value="Back">Back</button>
+      </form>
+    <script src="view.js"></script>
+    </body>
+</html>
